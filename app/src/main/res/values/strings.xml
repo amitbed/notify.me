@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">notify.me</string>
+    <string name="no_contacts">No Contacts Available</string>
+    <string name="from_lbl">From</string>
+    <string name="title_lbl">Title</string>
+    <string name="sub_title_lbl">Short Message</string>
+    <string name="message_lbl">Full Message</string>
+    <string name="send_txt">Send</string>
+    <string name="got_it_txt">Got It</string>
+    <string name="create_a_new_group_txt">New group</string>
+    <string name="send_feedback_txt">Send feedback</string>
+    <string name="create_notification_txt">Create Notification</string>
+    <string name="create_group_txt">Create Group</string>
+    <string name="minimum_contacts_txt">Group must contain at least 2 contacts</string>
+    <string name="sign_in_log_in_btn_txt">sign in / log in</string>
+</resources>

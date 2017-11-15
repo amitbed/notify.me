@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#246A73</color>
+    <color name="colorPrimaryDark">#003f48</color>
+    <color name="colorAccent">#FA9F42</color>
+    <color name="textCheckedColor">#a9a9a2</color>
+    <color name="messageColor">#2e2e2e</color>
+    <color name="defaultBackground">#fffafafa</color>
+</resources>

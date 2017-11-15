@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:layout_gravity="center"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/title_shown_txt"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="5dp"
+            android:textSize="27sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub_title_shown_txt"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_shown_txt"
+            android:textColor="@color/messageColor"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/senders_name_shown_txt"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="end"
+            android:textSize="14sp" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="45dp"
+            android:id="@+id/got_it_btn"
+            android:onClick="gotItButtonClick"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/button_background_green"
+            android:textColor="@android:color/white"
+            android:text="@string/got_it_txt"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ProgressBar
+        android:id="@+id/progressbar_contacts"
+        style="?android:attr/absListViewStyle"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@android:color/white"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Groups"
+        android:id="@+id/groups_divider_txt"
+        android:textColor="@color/textCheckedColor"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/groups_list"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/groups_divider_txt"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:id="@+id/contacts_divider_txt"
+        android:textColor="@color/textCheckedColor"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/groups_list"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contacts_list"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/contacts_divider_txt"/>
+
+    <TextView
+        android:id="@+id/no_contacts_txt"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_contacts"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_contacts_btn"
+            android:layout_marginRight="10dp"
+            android:text="@string/create_notification_txt"
+            android:clickable="false"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_new_group_btn"
+            android:text="@string/create_group_txt"
+            android:textColor="@color/colorPrimary"
+            android:clickable="false"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
